@@ -1,12 +1,12 @@
 import React from 'react';
-import ListEventComponent from '../../components/event-list';
+import EventList from '../../components/event-list/event-list';
 import { getData } from '../../dummy-data';
 
 const ListEventPage = () => {
 	const data = getData();
 	return (
 		<div>
-			<ListEventComponent data={data} />
+			<EventList data={data} />
 		</div>
 	);
 };
