@@ -26,7 +26,7 @@ async function getData() {
 export const getStaticProps = async (context: any) => {
 	const { params } = context;
 	const productId = params.pid;
-	const data = await getData();
+	const data = await getData(); 
 	const productDetail = data.products.find((product: IProduct) => product.id === productId);
 
 	return {
